@@ -1,0 +1,58 @@
+<br/>
+<br/>
+<div class="jumbotron" >
+  <div class="container">
+    <app-header-title></app-header-title>
+    <div class="row">
+      <div class="col-xl-6">
+        <h4 class="alert alert-primary">The only way to Broadcast/Record Games</h4>
+          <table class="table">
+            <thead class="thead-dark">
+              <th  >
+                Game Details
+              </th>
+            </thead>
+            <tbody>
+              <tr class="table-light">
+
+                <td>{{game.schedule}} @ {{game.venue}} (Court - {{game.court}})</td>
+
+              </tr>
+              <tr class="table-light">
+
+                <td>{{game.hometeam}} vs {{game.awayteam}}</td>
+
+              </tr>
+              <tr class="table-light">
+
+                <td>{{game.division}}</td>
+
+              </tr>
+              <tr class="table-light">
+
+                <td>icons</td>
+
+              </tr>
+              <tr><td>&nbsp;</td></tr>
+              <tr >
+
+                <td><button type="button" class="btn btn-default btn-block" (click)="broadcast();">Broadcast This Game</button></td>
+
+              </tr>
+              <tr >
+
+                <td><button type="button" class="btn btn-default btn-block" (click)="watch();">Watch This Game</button></td>
+
+              </tr>
+            </tbody>
+          </table>
+
+      </div>
+      <div class="col-xl-6">
+        <app-welcome-section></app-welcome-section>
+      </div>
+
+    </div>
+
+  </div>
+</div>
